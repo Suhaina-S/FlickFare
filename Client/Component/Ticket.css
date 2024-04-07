@@ -1,0 +1,129 @@
+.ticket-details {
+    text-align: center;
+    color:goldenrod;
+    font-family: 'Courier New', Courier, monospace
+    ; /* Change the font family to Arial */
+}
+
+.snacks-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping of snack sections */
+}
+
+.snacks-section, .drinks-section {
+    width: 45%;
+    margin-bottom: 20px; /* Add some bottom margin */
+    padding: 15px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.snacks-section h3, .drinks-section h3 {
+    margin-bottom: 15px;
+    color:white; /* Change heading color */
+}
+.snacks-quantities-wrapper {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+  
+.popcorn-selection, .drinks-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.snacks-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.snacks-quantities {
+    text-align:left;
+    margin-top: 30px; /* Add margin-top to bring it down */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    appearance: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 30px);
+    cursor: pointer;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.select-container {
+    position: relative;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.popcorn-selection img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.popcorn-selection p {
+    margin-left: auto;
+}
+
+.snacks-buttons button {
+    margin-bottom: 50px;
+}
+
+.snacks-quantities p {
+    margin-bottom: 10px;
+}
+
+.drinks-buttons button {
+    margin-bottom: 10px;
+}
+
+.drinks-section p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .snacks-container {
+        flex-direction: column;
+    }
+
+    .snacks-section, .drinks-section {
+        width: 100%;
+    }
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+.selected {
+    background-color: blue; /* Change to desired color */
+    color: white; /* Change text color if needed */
+  }
+  
